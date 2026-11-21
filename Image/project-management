@@ -1,0 +1,31 @@
+<!-- IProject Management Start -->
+        <div class="industry-container">
+            <div class="industry-wrapper">
+                <div class="industry-header">
+                    <h1>Industry-leading project management, DevOps, <br>and ITSM solutions</h1>
+                    <p>Get your ideas to market faster and deliver world-class customer experiences with Atlassian's <br>scaleable and secure suite of product, project, and service management solutions.</p>
+                </div>
+                <div class="industry-tabs">
+                    <button class="tab-btn active">Agile development</button>
+                    <button class="tab-btn">IT & service management</button>
+                    <button class="tab-btn">DevOps</button>
+                    <button class="tab-btn">Project management</button>
+                </div>
+                <div class="industry-content">
+                    <div class="industry-left">
+                        <h1>Project management</h1>
+                        <p>
+                            Manage complex projects and tight timelines <br>with a single-source of truth for planning, <br>tracking, collaborating and managing <br>resources with our comprehensive suite of <br>project management tools.
+                        </p>
+                        
+                        <p class="explore-link" style=" margin-top: 30px; color: #0065FF;">
+                            Explore Jira Software <img src="cf3a708f-1c15-4d5d-85ea-1084392cf254.svg" alt="" class="arrow-img">
+                        </p>
+                    </div>
+                    <div class="industry-right">
+                        <img src="./jsm-business-teams-roadmaps.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Project Management End -->

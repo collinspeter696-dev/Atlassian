@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured</title>
+    <link href="https://db.onlinewebfonts.com/c/7aae450d6072a9daecdbef5e96030961?family=Charlie+Display" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/b3fe18df46ab89acf0b088e3f72636f0?family=Charlie+Display+Bold" rel="stylesheet">
+</head>
+<style>
+    section {
+        height: 100%;
+        width: 100%;
+        font-family: "Charlie Display";
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .fir {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .fir p {
+        font-size: 0.8rem;
+    }
+
+    .fir_group {
+        display: flex;
+        gap: 20px;
+    }
+
+    .fir_sub {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .fir_sub p {
+        font-size: 0.7rem;
+        line-height: 0.2
+    }
+
+    #h {
+        font-family: "Charlie Display Bold";
+        line-height: 0.2;
+        font-size: 1rem;
+    }
+
+    #h:hover {
+        color: #1867e0;
+    }
+
+    .sec {
+        height: 60%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sec p {
+        font-size: 0.8rem;
+    }
+
+    .sec_group {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        
+    }
+
+    .at_a {
+        width: 42%;
+        height: 30%;
+        background-color: rgb(240, 239, 239);
+        border-radius: 20px;
+        padding: 20px;                
+    }
+
+    .sec_group span {
+        font-family: "Charlie Display Bold";
+    }
+
+    .sec_group p {
+        font-size: 0.7rem;
+        line-height: 0.7;
+        letter-spacing: 1px;
+    }
+
+    .serv {
+        height: 78px;
+        width: 42%;
+    }
+
+    #jsm {
+        line-height: 1.2;
+    }
+</style>
+<body>
+    <section>
+        <div class="fir">
+            <p>FEATURED APPS</p>
+            <div class="fir_group">
+                <div class="fir_sub">
+                    <img src="./Image/jira.svg" alt="" height="30px">
+                    <div><a href="">
+                        <p id="h">Jira</p>
+                        <p>Flexible project Management</p></a>
+                    </div>
+                </div>
+                <div class="fir_sub">
+                    <img src="./Image/confluence.svg" alt="" height="30px">
+                    <div><a href="">
+                        <p id="h">Confluence</p>
+                        <p>Knowledge, all in one place</p></a>
+                    </div>
+                </div>
+                <div class="fir_sub">
+                    <img src="./Image/jira service.svg" alt="" height="30px">
+                    <div><a href="">
+                        <p id="h">Jira Service Management</p>
+                        <p>Deliver service at high velocity</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec">
+            <p>ATLASSIAN COLLECTIONS</p>
+            <div class="sec_group">
+                <a class="at_a" href="">
+                    <span>Teamwork</span> Collection
+                    <p>Supercharged teamwork seamlessly</p>
+                    <p>Jira.Confluence.Loom</p>
+                </a>
+                <a class="at_a" href="">
+                    <span>Strategy</span> Collection
+                    <p>Optimized strategy and outcomes confidently</p>
+                    <p>Focus.Talent.Align</p>
+                </a>
+                <a class="serv at_a" href="">
+                    <span>Service</span> Collection
+                    <p >Deliver service at high-velocity</p>
+                    <p id="jsm">Jira service Management.Customer Service Management.Assets</p>
+                </a>
+                <a class="at_a" href="">
+                    <span>Software</span> Collection
+                    <p>Ship high-quality software fast</p>
+                    <p>Rovo Dev.DX.Pipelines.Bitbucket</p>
+                </a>
+                <a class="at_a" href="">
+                    <span>Product</span> Collection
+                    <p>Build products with confidence</p>
+                    <p>Jira Product Discovery.Feedback.Rovo</p>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

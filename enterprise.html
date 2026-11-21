@@ -1,0 +1,526 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mega Menu</title>
+
+<style>
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar{
+  background: #333;
+}
+
+.navbar ul{
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li{
+  position: relative;
+}
+
+.navbar ul li a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 16px 20px;
+}
+
+.navbar ul li a:hover{
+  background: #444;
+}
+
+/* Dropdown parent */
+.dropdown{
+  position: relative;
+}
+
+/* Invisible hover bridge */
+.dropdown::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 60px;
+}
+
+/* Mega menu */
+.dropdown-menu{
+  position: absolute;
+
+  /* Far below navbar */
+  top: 150%;
+  left: 0;
+
+  width: 700px;
+
+  background: white;
+
+  padding: 25px;
+
+  display: none;
+
+  /* Multiple columns */
+  display: flex;
+  gap: 40px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: 0.3s;
+}
+
+/* Show dropdown */
+.dropdown:hover .dropdown-menu{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Column lists */
+.dropdown-menu ul{
+  display: block;
+  min-width: 180px;
+}
+
+/* Headings */
+.dropdown-menu .title{
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #3498db;
+}
+
+/* Links */
+.dropdown-menu li{
+  margin: 8px 0;
+}
+
+.dropdown-menu li a{
+  color: #333;
+  padding: 0;
+}
+
+.dropdown-menu li a:hover{
+  color: #3498db;
+  background: none;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li class="dropdown">
+
+<a href="#">Services ▼</a>
+
+<div class="dropdown-menu">
+
+  <ul>
+    <li class="title">Design</li>
+    <li><a href="#">Web Design</a></li>
+    <li><a href="#">UI/UX</a></li>
+    <li><a href="#">Graphics</a></li>
+  </ul>
+
+  <ul>
+    <li class="title">Development</li>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+
+  <ul>
+    <li class="title">Marketing</li>
+    <li><a href="#">SEO</a></li>
+    <li><a href="#">Ads</a></li>
+    <li><a href="#">Branding</a></li>
+  </ul>
+
+</div>
+
+</li>
+
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hamburger Toggle</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar{
+  background: #333;
+  padding: 15px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo{
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Icon */
+.menu-icon{
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+
+  display: none;
+}
+
+/* Menu */
+.nav-menu{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu li a{
+  color: white;
+  text-decoration: none;
+}
+
+/* Mobile */
+@media (max-width: 768px){
+
+  .menu-icon{
+    display: block;
+  }
+
+  .nav-menu{
+    position: absolute;
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+
+    background: #333;
+
+    flex-direction: column;
+
+    display: none;
+  }
+
+  .nav-menu li{
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .nav-menu.active{
+    display: flex;
+  }
+
+}
+
+.story_carousel {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.story_carousel_track {
+    height: 80%;
+    display: flex;
+    align-items: flex-end;
+    gap: 50px;
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+}
+
+.story_carousel_track::-webkit-scrollbar {
+    display: none;
+}
+
+.story_carousel_track::before,
+.story_carousel_track::after {
+    content: "";
+    flex: 0 0 50px;
+}
+
+.story_card {
+    flex: 0 0 calc((100% - 200px) / 3);
+
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    scroll-snap-align: start;
+
+    transition: transform .35s ease;
+}
+
+.story_card:hover {
+    transform: scaleY(1.12);
+}
+
+.story_card_tall {
+    height: 70%;
+}
+
+.story_card_short {
+    height: 60%;
+}
+
+.story_number {
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.story_symbol {
+    font-size: 2rem;
+}
+
+.story_card p {
+    font-size: 1.5rem;
+}
+
+.story_card button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Colors */
+
+.alpha {
+    background: rgb(211,238,248);
+    color: black;
+}
+
+.beta {
+    background: rgb(146,62,146);
+    color: white;
+}
+
+.gamma {
+    background: #f1d790;
+    color: black;
+}
+
+.delta {
+    background: #636936;
+    color: white;
+}
+
+.epsilon {
+    background: #9be79b;
+    color: black;
+}
+
+.zeta {
+    background: lightgray;
+    color: black;
+}
+
+.story_controls {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+
+    display: flex;
+    gap: 10px;
+}
+
+.story_controls button {
+    width: 60px;
+    height: 60px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: black;
+    color: white;
+
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.story_controls button:hover {
+    background: #3f577c;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">Logo</div>
+
+<!-- Icon -->
+<i class="fa-solid fa-bars menu-icon" id="menuIcon"></i>
+
+<!-- Menu -->
+<ul class="nav-menu" id="navMenu">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Services</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="story_carousel">
+    <div class="story_carousel_track">
+
+        <a class="story_card story_card_tall alpha" href="#">
+            <img src="./Image/mercedes.svg" alt="" height="30">
+            <p><span class="story_number">85</span><span class="story_symbol">%</span><br>
+                of wasted engineering time redirected towards critical innovation
+            </p>
+            <button>Read the story →</button>
+        </a>
+
+        <a class="story_card story_card_short beta" href="#">
+            <img src="./Image/cisco.svg" alt="" height="30">
+            <p><span class="story_number">40</span><span class="story_symbol">x</span><br>
+                acceleration in reporting with Rovo agents
+            </p>
+            <button>Read the story →</button>
+        </a>
+
+        <a class="story_card story_card_tall gamma" href="#">
+            <img src="./Image/reddit.svg" alt="" height="30">
+            <p><span class="story_number">100</span><span class="story_symbol">+</span><br>
+                hours saved per week by eliminating repetitive support questions
+            </p>
+            <button>Read the story →</button>
+        </a>
+
+        <a class="story_card story_card_short delta" href="#">
+            <img src="./Image/procore.svg" alt="" height="30">
+            <p><span class="story_number">75</span><span class="story_symbol">%</span><br>
+                reduction in time spent writing quarterly roadmaps
+            </p>
+            <button>Read the story →</button>
+        </a>
+
+        <a class="story_card story_card_short epsilon" href="#">
+            <img src="./Image/sproutsocial.svg" alt="" height="30">
+            <p><span class="story_number">360</span><span class="story_symbol">+</span><br>
+                hours of work saved every year onboarding new hires
+            </p>
+            <button>Read the story →</button>
+        </a>
+
+        <a class="story_card story_card_short zeta" href="#">
+            <img src="./Image/datasite.svg" alt="" height="30">
+            <p><span class="story_number">500</span><span class="story_symbol">k+</span><br>
+                in time and 4,000+ meetings reclaimed in 5 months
+            </p>
+            <button>Read the story →</button>
+        </a>
+
+    </div>
+
+    <div class="story_controls">
+        <button id="storyPrev">←</button>
+        <button id="storyNext">→</button>
+    </div>
+</section>
+
+<script>
+
+const menuIcon = document.getElementById("menuIcon");
+const navMenu = document.getElementById("navMenu");
+
+menuIcon.addEventListener("click", () => {
+
+  navMenu.classList.toggle("active");
+
+  /* Change icon */
+  if(navMenu.classList.contains("active")){
+    menuIcon.classList.remove("fa-bars");
+    menuIcon.classList.add("fa-xmark");
+  } else {
+    menuIcon.classList.remove("fa-xmark");
+    menuIcon.classList.add("fa-bars");
+  }
+
+});
+
+const storyTrack = document.querySelector(".story_carousel_track");
+
+document.getElementById("storyNext").addEventListener("click", () => {
+    storyTrack.scrollBy({
+        left: storyTrack.clientWidth,
+        behavior: "smooth"
+    });
+});
+
+document.getElementById("storyPrev").addEventListener("click", () => {
+    storyTrack.scrollBy({
+        left: -storyTrack.clientWidth,
+        behavior: "smooth"
+    });
+});
+
+</script>
+
+</body>
+</html>

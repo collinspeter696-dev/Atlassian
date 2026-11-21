@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teamwork</title>
+    <link href="https://db.onlinewebfonts.com/c/7aae450d6072a9daecdbef5e96030961?family=Charlie+Display" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/b3fe18df46ab89acf0b088e3f72636f0?family=Charlie+Display+Bold" rel="stylesheet">
+</head>
+<style>
+    section {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-family: "Charlie Display";
+    }
+
+    .left {
+        height: 100%;
+        width: 60%;
+    }
+
+    .team {
+        font-family: "Charlie Display Bold";
+    }
+    
+    p {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-family: "Charlie Display Bold";
+        line-height: 1;
+    }
+
+    .psec {
+        letter-spacing: 1px;
+        font-size: 1rem;
+    }
+
+    .sec img {
+        height: 45px;
+    }
+
+    .include {
+        font-size: 1.1rem;
+        margin-top: 50px;
+    }
+
+    .sec div {
+        display: flex;
+        gap: 30px;
+    }
+
+    .sec span {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    .right {
+        width: 40%;
+        height: 60%;
+        margin-top: 10%;
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    button a {
+        font-size: 0.95rem;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+    }
+
+    button a:hover {
+        color: black;
+    }
+
+    button a svg {
+        transition: transform 350ms ease;
+    }
+
+    button a:hover svg {
+        transform: translateX(5px);
+    }
+    @media screen and (max-width: 500px) {
+        section {
+            display: block;
+        }
+        .left {
+            width: 100%;
+            height: 60%;
+        }
+        h1 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+        .sec div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .include {
+            margin-top: 30px;
+        }
+        button {
+            margin-top: 30px;
+        }
+        .right {
+            width: 100%;
+            height: 30%;
+        }
+    }
+</style>
+<body>
+    <section>
+        <div class="left">
+            <p><span class="team">Product</span> Collection</p>
+            <div class="fir">
+                <h1>Better product decisions in the age of AI</h1>
+                <p class="psec">Bring together customer insights, product prioritization, and delivery into one place so you can build with confidence.</p>
+            </div>
+            <div class="sec">
+                <p class="include">INCLUDES</p>
+                <div>
+                    <span><img src="./Image/jira pro discovery.svg" alt="">Jira Product Discovery</span><span><img src="./Image/feedback.svg" alt="">Feedback</span><span><img src="./Image/rovo.svg" alt="">Rovo</span>
+                </div>
+            </div>
+            <button><a href="">Explore Teamwork Collection <svg height="15px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z"/></svg></a></button>
+        </div>
+        <div class="right">
+            <img src="./Image/product image.png" alt="" height="100%" width="100%">
+        </div>
+    </section>
+</body>
+</html>

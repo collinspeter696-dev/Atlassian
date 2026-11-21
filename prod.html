@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers</title>
+    <link href="https://db.onlinewebfonts.com/c/7aae450d6072a9daecdbef5e96030961?family=Charlie+Display" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/b3fe18df46ab89acf0b088e3f72636f0?family=Charlie+Display+Bold" rel="stylesheet">
+</head>
+<style>
+    section {
+        width: 100%;
+        height: 90%;
+        box-sizing: border-box;
+        font-family: "Charlie Display";
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .fir {
+        width: 90%;
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 50px;
+        margin-top: 30px;
+    }
+
+    .fir_sub {
+        width: 45%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .fir_sub p {
+        font-size: 0.7rem;
+        line-height: 0.2;
+    }
+
+    #h {
+        font-family: "Charlie Display Bold";
+        line-height: 0.8;
+        font-size: 1rem;
+    }
+
+    #h:hover {
+        color: #1867e0;
+    }
+
+    .sec {
+        width: 90%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+
+    .at_a {
+        width: 42%;
+        height: 36%;
+        background-color: rgb(240, 239, 239);
+        border-radius: 20px;
+        padding: 20px;                
+    }
+
+    .sec span {
+        font-family: "Charlie Display Bold";
+    }
+
+    .sec p {
+        font-size: 0.7rem;
+        line-height: 0.7;
+        letter-spacing: 1px;
+    }
+
+    .sec div {
+        display: flex;
+        gap: 30px;
+    }
+
+    .drop_bottom {
+        width: 92%;
+        height: 40%;
+        border: 1px solid rgb(221, 219, 219);
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        font-size: 0.95rem;
+        cursor: pointer;
+        color: rgb(168, 165, 165);
+        padding: 20px 0px 20px 60px ;
+        display: flex;
+        align-items: center;
+    }
+
+    .drop_bottom:hover {
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .strovo {
+        color: black;
+        padding: 0px 15px;
+    }
+</style>
+<body>
+    <section>
+        <div class="fir">
+            <div class="fir_sub">
+                <img src="./Image/jira pro discovery.svg" alt="" height="40px">
+                <div><a href="">
+                    <p id="h">Jira Product Discovery</p>
+                    <p>Capture and prioritize ideas</p></a>
+                </div>
+            </div>
+            <div class="fir_sub">
+                <img src="./Image/jira.svg" alt="" height="40px">
+                <div><a href="">
+                    <p id="h">Jira</p>
+                    <p>Flexible project Management</p></a>
+                </div>
+            </div>
+            <div class="fir_sub">
+                <img src="./Image/confluence.svg" alt="" height="40px">
+                <div><a href="">
+                    <p id="h">Confluence</p>
+                    <p>Knowledge, all in one place</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="sec">
+            <div>
+                <a class="at_a" href="">
+                    <span>Software</span> Collection
+                    <p>Ship high-quality software fast</p>
+                    <p>Rovo Dev.DX.Pipelines.Bitbucket</p>
+                </a>
+                <a class="at_a" href="">
+                        <span>Product</span> Collection
+                        <p>Build products with confidence</p>
+                        <p>Jira Product Discovery.Feedback.Rovo</p>
+                </a>
+            </div>
+            <a class="drop_bottom" href="#"><img height="37px" src="./Image/rovo.svg" alt=""><strong class="strovo">Rovo</strong>AI-powered apps-driven by your teams knowledge</a>
+        </div>
+    </section>
+</body>
+</html>
